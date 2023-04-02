@@ -54,8 +54,8 @@ function checkScore() {
             infoDisplay.textContent="Congratulations! Circle won!"
             
             allSquares.forEach(square=>square.replaceWith(square.cloneNode(true)))
-            return 
-            
+            return location.reload()
+        
         }
     })
 
@@ -68,7 +68,7 @@ function checkScore() {
         if (crossWins) {
             infoDisplay.textContent="Congratulations! Cross won!"
             allSquares.forEach(square=>square.replaceWith(square.cloneNode(true)))
-            return
+            return location.reload()
         }
     })
 }
