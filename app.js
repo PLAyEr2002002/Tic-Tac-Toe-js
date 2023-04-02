@@ -70,5 +70,8 @@ function checkScore() {
             allSquares.forEach(square=>square.replaceWith(square.cloneNode(true)))
             return location.reload()
         }
+       
     })
+
+
 }
